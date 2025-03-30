@@ -1,0 +1,19 @@
+.bg-primary {
+    color: $white;
+
+    * {
+        color: $white;
+    }
+}
+
+.card {
+    -webkit-box-shadow: 4px 4px 10px 6px rgba(115, 45, 145, 0.16);
+    -moz-box-shadow: 4px 4px 10px 6px rgba(115, 45, 145, 0.16);
+    box-shadow: 4px 4px 10px 6px rgba(115, 45, 145, 0.16);
+    margin-top: rem(22);
+    overflow: hidden;
+}
+
+h2, .h2{
+    font-weight: $font-weight-light;
+}

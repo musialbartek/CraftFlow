@@ -1,0 +1,124 @@
+$layoutMainPaddingY: rem(25);
+$layoutMainPaddingX: rem(45);
+
+
+html, body, #app>.row:first-of-type{
+    min-height: 100vh;
+}
+
+.h-inherit{
+    min-height: inherit;
+}
+
+main{
+    margin-top: rem(50);
+}
+
+.container{
+    max-width: unset;
+    padding: 0 rem(60);
+}
+
+main{
+    height: 100%;
+}
+
+.card{
+    min-height: rem(370);
+    &-bg-image{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+header{
+    padding: $layoutMainPaddingY $layoutMainPaddingX;
+}
+
+header{
+    width: 100%;
+    background-color: $white;
+    border-radius: rem(20);
+    -webkit-box-shadow: 4px 4px 10px 4px rgba(115, 45, 145, 0.16);
+    -moz-box-shadow: 4px 4px 10px 4px rgba(115, 45, 145, 0.16);
+    box-shadow: 4px 4px 10px 4px rgba(115, 45, 145, 0.16);
+    a{  
+        font-size: rem(20);
+        color: $primary;
+        text-decoration: unset;
+        display: inline-flex;
+        align-items: center;
+    }
+    i{
+        font-size: rem(30);
+        margin-right: rem(15);
+        line-height: 1;
+    }
+    .bi-plus-lg{
+        font-size: rem(40);
+    }
+    .bi-bell{
+        margin-right: unset;
+    }
+    .d-flex{
+        &>a{
+            &:not(:last-of-type){
+                margin-right: rem(56);
+            }
+        }
+    }
+}
+
+nav{
+    background: $white;
+    height: 100%;
+    -webkit-box-shadow: 4px 7px 10px 4px rgba(115, 45, 145, 0.16);
+    -moz-box-shadow: 4px 7px 10px 4px rgba(115, 45, 145, 0.16);
+    box-shadow: 4px 7px 10px 4px rgba(115, 45, 145, 0.16);
+    &.navbar{
+        padding: rem(24) rem(18);
+    }
+    .navbar-nav{
+        margin-top: rem(110);
+        width: 100%;
+    }
+    .nav-link{
+        color: $primary;
+        display: inline-flex;
+        align-items: center;
+        padding: rem(17);
+        width: 100%;
+        border-radius: rem(20);
+        transform: $transition-base;
+        &:not(.router-link-active){
+            padding: rem(19) rem(17);
+        }
+        &.router-link-active{
+            background-color: $secondary;
+            font-size: rem(20);
+        }
+        i{
+            font-size: rem(25);
+            margin-right: rem(23);
+            line-height: 1;
+        }
+    }
+
+    .router-link-active{
+        color: $navbar-light-hover-color;
+    }
+    .navbar-logo{
+        display: block;
+        background-color: $primary;
+        padding: rem(14) rem(11);
+        border-radius: rem(20);
+        -webkit-box-shadow: 2px 5px 6px 0px rgba(115, 45, 145, 0.25);
+        -moz-box-shadow: 2px 5px 6px 0px rgba(115, 45, 145, 0.25);
+        box-shadow: 2px 5px 6px 0px rgba(115, 45, 145, 0.25);
+        img{
+            width: rem(68);
+            height: rem(61);
+        }
+    }
+}
