@@ -24,7 +24,7 @@
     });
 </script>
 <template>
-    <div class="h-inherit">
+    <div class="h-inherit my-works-overview">
         <div class="swiper mySwiper h-inherit">
             <div class="swiper-wrapper h-inherit">
                 <div class="swiper-slide h-inherit" v-for="n in 4">
@@ -35,6 +35,7 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
+        <a href="#" class="btn-more">More</a>
     </div>
 
 </template>
