@@ -12,7 +12,7 @@
             <div class="row gy-5">
                 <div class="col-md-6">
                     <h2>Calendar</h2>
-                    <div class="card bg-primary">
+                    <div class="card card-calendar bg-primary">
                         <Calendar></Calendar>
                     </div>
                 </div>
